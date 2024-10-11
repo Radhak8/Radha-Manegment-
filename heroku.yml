@@ -2,4 +2,4 @@ build:
   docker:
     worker: Dockerfile
 run:
-  worker: python3 -m Nobita_X_Robot
+  worker: python3 -m RadhaX

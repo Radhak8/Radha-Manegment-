@@ -69,12 +69,12 @@ RUN pip3 install --upgrade pip setuptools
 ENV PATH="/home/bot/bin:$PATH"
 
 # make directory
-RUN mkdir /Nobita_X_Robot/
-COPY . /Nobita_X_Robot
-WORKDIR /Nobita_X_Robot
+RUN mkdir /RadhaX/
+COPY . /RadhaX
+WORKDIR /RadhaX
 
 # Install requirements
 RUN pip3 install -U "pip < 22" setuptools wheel && pip3 install -U -r requirements.txt
 
 # Starting Worker
-CMD ["python3","-m","Nobita_X_Robot"]
+CMD ["python3","-m","RadhaX"]

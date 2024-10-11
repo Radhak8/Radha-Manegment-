@@ -28,5 +28,5 @@ if '%errorlevel%' NEQ '0' (
 :--------------------------------------
 :: your commands begin from this point.
 :: stops the service and then starts it 
-net stop Nobita_X_Robot
-net start Nobita_X_Robot
+net stop RadhaX
+net start RadhaX

@@ -1,16 +1,16 @@
 
 # Config files, logs and stuff
-Nobita_X_Robot/modules/helper_funcs/temp.txt
-Nobita_X_Robot/elevated_users.json
-Nobita_X_Robot/config.py
-Nobita_X_Robot/config.ini
+RadhaX/modules/helper_funcs/temp.txt
+RadhaX/elevated_users.json
+RadhaX/config.py
+RadhaX/config.ini
 log.txt
 kangsticker.png
 updates.txt
 
 # Session files
-Nobita_X_Robot/*.session
-Nobita_X_Robot/*.session-journal
+RadhaX/*.session
+RadhaX/*.session-journal
 Star.session-journal
 *.session
 
