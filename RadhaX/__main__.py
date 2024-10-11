@@ -1,4 +1,28 @@
 import importlib
+import hashlib
+import sys
+import os
+
+def calculate_hash():
+    hash_obj = hashlib.sha256()
+    for root, dirs, files in os.walk('.'):
+        for file in files:
+            if file == 'hash.txt':
+                continue
+            with open(os.path.join(root, file), 'rb') as f:
+                while chunk := f.read(8192):
+                    hash_obj.update(chunk)
+    return hash_obj.hexdigest()
+
+def verify_hash():
+    with open('hash.txt', 'r') as f:
+        stored_hash = f.read().strip()
+    current_hash = calculate_hash()
+    if stored_hash != current_hash:
+        print("Code has been modified. Exiting...")
+        sys.exit(1)
+
+verify_hash()
 import re
 import time
 import asyncio
